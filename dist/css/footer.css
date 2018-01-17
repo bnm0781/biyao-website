@@ -1,0 +1,119 @@
+.footer {
+  width: 100%;
+  margin-top: 60px;
+  background: #fff; }
+  .footer > div {
+    width: 1080px;
+    margin: 0 auto;
+    text-align: center; }
+
+.footer-serve {
+  border-bottom: 1px solid #ccc; }
+  .footer-serve li {
+    float: left;
+    width: 270px;
+    height: 120px; }
+  .footer-serve dl {
+    line-height: 120px;
+    text-align: center; }
+  .footer-serve dt {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle; }
+  .footer-serve dd {
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    margin-left: 15px; }
+
+.serve-make {
+  background: url("http://static1.biyao.com/pc/common/img/master/serve-make.png?v=biyao_c8081f5") no-repeat;
+  background-size: 100% 100%; }
+
+.serve-backage {
+  background: url("http://static3.biyao.com/pc/common/img/master/serve-backage.png?v=biyao_9a06bd1") no-repeat;
+  background-size: 100% 100%; }
+
+.serve-pay {
+  background: url("http://static.biyao.com/pc/common/img/master/serve-pay.png?v=biyao_0a87a59") no-repeat;
+  background-size: 100% 100%; }
+
+.serve-refund {
+  background: url("http://static2.biyao.com/pc/common/img/master/serve-refund.png?v=biyao_6c8542b") no-repeat;
+  background-size: 100% 100%; }
+
+.footer-main {
+  margin-top: 30px; }
+
+.footer-detail {
+  float: left;
+  padding-left: 50px;
+  text-align: left;
+  border-right: 1px solid #ccc; }
+  .footer-detail > li {
+    float: left;
+    margin-right: 120px; }
+  .footer-detail h2 {
+    font-size: 16px;
+    color: #333;
+    font-weight: normal; }
+  .footer-detail ul {
+    margin-top: 30px; }
+    .footer-detail ul li {
+      margin-bottom: 10px; }
+  .footer-detail a {
+    font-size: 12px;
+    color: #808080; }
+  .footer-detail .footer-wxCode {
+    position: relative; }
+    .footer-detail .footer-wxCode div {
+      position: absolute;
+      top: -46px;
+      left: 62px;
+      display: none;
+      border-radius: 4px;
+      box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.05); }
+    .footer-detail .footer-wxCode i {
+      position: absolute;
+      top: 40px;
+      left: -15px;
+      display: block;
+      width: 15px;
+      height: 30px;
+      background: url("http://static4.biyao.com/pc/common/img/master/left-triangle.png?v=biyao_42396c0") no-repeat;
+      background-size: 100% 100%; }
+    .footer-detail .footer-wxCode span {
+      display: block;
+      width: 114px;
+      height: 114px;
+      background: url("http://static1.biyao.com/pc/common/img/master/wxCode.jpg?v=biyao_79ba7c9") center center no-repeat;
+      background-size: 100% 100%; }
+  .footer-detail p {
+    width: 105px;
+    height: 105px;
+    margin-top: 15px;
+    background: url("http://static3.biyao.com/pc/common/img/master/app.png?v=biyao_42175f7") center center no-repeat;
+    background-size: 100% 100%; }
+
+.footer-contact dt {
+  font-size: 16px;
+  color: #333; }
+
+.footer-contact dd {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #808080; }
+
+.footer-info {
+  margin-top: 60px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: #808080; }
+  .footer-info p {
+    margin-bottom: 10px; }
+  .footer-info span {
+    display: inline-block;
+    margin: 0 10px; }
+  .footer-info a {
+    color: #808080; }

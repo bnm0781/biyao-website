@@ -1,0 +1,210 @@
+.nav {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 110;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+  .nav > div {
+    width: 1080px;
+    margin: 0 auto; }
+
+.nav-index > div {
+  position: relative; }
+
+.nav-logo {
+  float: left;
+  width: 239px;
+  height: 98px;
+  background: url("http://static2.biyao.com/pc/common/img/master/logo.png?v=biyao_86dbb9f") 0 center no-repeat; }
+
+.nav-category {
+  position: relative;
+  float: left;
+  display: none; }
+  .nav-category > p {
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer; }
+    .nav-category > p span {
+      color: #808080;
+      font-size: 16px; }
+    .nav-category > p i {
+      display: inline-block;
+      width: 15px;
+      height: 8px;
+      margin-left: 10px;
+      background: url("http://static3.biyao.com/pc/common/img/master/categoryDown.png?v=biyao_0a4f89f") no-repeat; }
+  .nav-category > div {
+    display: none; }
+
+.nav-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 320px;
+  padding: 20px 0;
+  background: url("http://static.biyao.com/pc/common/img/master/category-back.png?v=biyao_51b5f7a"); }
+
+.nav-main {
+  width: 200px; }
+  .nav-main > p {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px; }
+    .nav-main > p a {
+      font-size: 14px;
+      color: #fff; }
+    .nav-main > p span {
+      margin: 0 5px;
+      font-size: 16px;
+      color: #fff; }
+  .nav-main > ul {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    display: none;
+    min-height: 331px;
+    width: 700px;
+    padding: 15px 0;
+    background: #fff;
+    box-shadow: 1px 0px 15px 5px rgba(0, 0, 0, 0.05); }
+
+.nav-sub > a {
+  display: inline-block;
+  width: 62px;
+  margin: -2px 10px 0;
+  line-height: 20px;
+  text-align: right;
+  font-size: 14px;
+  color: #333;
+  vertical-align: middle; }
+
+.nav-sub > i {
+  display: inline-block;
+  margin-top: 15px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333; }
+
+.nav-sub ul {
+  float: right;
+  width: 567px;
+  margin: 0 20px 0 16px;
+  padding-top: 15px;
+  border-bottom: 1px solid #f2f2f2; }
+
+.nav-item {
+  float: left;
+  margin: 0 20px 15px 0;
+  line-height: 20px; }
+  .nav-item a {
+    text-align: center;
+    color: #808080; }
+
+.nav-search {
+  position: relative;
+  float: right;
+  margin-top: 30px; }
+  .nav-search p {
+    position: relative;
+    z-index: 2;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff; }
+  .nav-search input {
+    width: 298px;
+    height: 38px;
+    padding-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    line-height: 38px;
+    color: #333;
+    font-size: 16px;
+    border-radius: 3px;
+    vertical-align: middle; }
+  .nav-search span {
+    display: inline-block;
+    width: 39px;
+    height: 38px;
+    border-left: 1px solid #ccc;
+    vertical-align: middle;
+    background: url("http://static1.biyao.com/pc/common/img/master/search.png?v=biyao_52ad1f7") center center no-repeat;
+    cursor: pointer; }
+  .nav-search ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    width: 308px;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 1px 0px 15px 5px rgba(0, 0, 0, 0.05); }
+  .nav-search li {
+    height: 32px;
+    padding: 0 10px;
+    line-height: 32px;
+    cursor: pointer; }
+
+.nav-index .nav-search input {
+  width: 488px; }
+
+.nav-index .nav-search ul {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block !important;
+  width: 540px;
+  height: 35px;
+  padding: 0;
+  margin-bottom: 40px;
+  background: none;
+  box-shadow: none;
+  overflow: hidden; }
+
+.nav-index .nav-search li {
+  float: left;
+  height: 35px;
+  padding: 0;
+  margin-right: 20px;
+  line-height: 35px;
+  color: #808080; }
+
+.nav-tab {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  .nav-tab span {
+    float: left;
+    width: 180px;
+    height: 40px;
+    padding-left: 20px;
+    line-height: 40px;
+    background: #f2f2f2;
+    color: #333;
+    font-size: 16px; }
+  .nav-tab i {
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    margin-right: 10px;
+    background: url("http://static2.biyao.com/pc/common/img/master/nav-list.png?v=biyao_27eef35") no-repeat; }
+  .nav-tab ul {
+    float: left;
+    height: 40px;
+    line-height: 40px; }
+  .nav-tab li {
+    display: inline-block;
+    height: 16px;
+    padding: 0 30px;
+    border-right: 1px solid #ccc;
+    line-height: 16px;
+    cursor: pointer;
+    font-size: 16px; }
+  .nav-tab a {
+    color: #333; }
+  .nav-tab .nav-tab-last {
+    border: 0; }

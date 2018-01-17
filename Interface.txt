@@ -1,0 +1,17 @@
+ËÑË÷£º
+http://www.biyao.com/classify/hotWord?callback=jQuery183007762332913539116_1515584651893&_=1515584651977
+http://www.biyao.com/classify/hotWord?callback=jQuery183021275913451976192_1516150953536&_=1516150953982
+
+http://www.biyao.com/home/getMoreModule?pageSize=10&pageIndex=2&platform=2
+
+http://www.biyao.com/home/getMoreModule?pageSize=10&pageIndex=3&platform=2
+
+http://www.biyao.com/classify/hotWord?callback=jQuery18309927461964180218_1516093421361&_=1516093421665
+
+http://www.biyao.com/products/getComment
+
+http://www.biyao.com/home/getMoreModule?pageSize=10&pageIndex=2&platform=2
+
+http://www.biyao.com/home/getMoreModule?pageSize=10&pageIndex=3&platform=2
+
+http://www.biyao.com/products/allRating

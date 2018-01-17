@@ -1,0 +1,63 @@
+.banner{
+	position: relative;
+	width: 1080px;
+	margin: 10px auto 0;
+	background: #fff;
+}
+.banner-slider{
+	position: relative;
+	>ul{
+		height: 360px;
+	}
+	li{
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+	a{
+		display: block;
+	}
+	img{
+		width: 1080px;
+		height: 360px;
+	}
+	span{
+		position: absolute;
+		top: 50%;
+		left: 220px;
+		display: none;
+		width: 48px;
+		height: 48px;
+		margin-top: -24px;
+		border-radius: 2px;
+		background: url("http://static2.biyao.com/pc/common/img/master/slider-left.png?v=biyao_6993b64") no-repeat;
+		cursor: pointer;
+	}
+	.slider-right{
+		left: inherit;
+		right: 20px;
+		background: url("http://static3.biyao.com/pc/common/img/master/slider-right.png?v=biyao_f16afa6") no-repeat;
+	}
+}
+.banner-item{
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	width: 880px;
+	text-align: center;
+	li{
+		position: relative;
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 0 6px;
+		border-radius: 50%;
+		border: 2px solid #523669;
+		cursor: pointer;
+	}
+	.item-active{
+	background: #f7b200;
+	border: 2px solid #f7b200;
+	}
+}

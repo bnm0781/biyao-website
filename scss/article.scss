@@ -1,0 +1,30 @@
+.article{
+	width: 1080px;
+	margin: 0 auto;
+	a{
+		display: block;
+		line-height: 56px;
+		font-size: 16px;
+		color: #333;
+		background: #fff;
+	}
+	img{
+		display: inline-block;
+		width: 100px;
+		margin: 0 48px;
+		vertical-align: middle;
+	}
+	span{
+		display: inline-block;
+		height: 21px;
+		padding-left: 20px;
+		border-left: 1px solid #ccc;
+		font-size: 16px;
+		line-height: 21px;
+		vertical-align: middle;
+	}
+	i{
+		float: right;
+		margin-right: 20px;
+	}
+}
