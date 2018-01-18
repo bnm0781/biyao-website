@@ -50,10 +50,12 @@ table {
 
 a {
   text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
 
 img {
-  display: block;
-  border: 0; }
+  border: 0;
+  vertical-align: middle; }
 
 a, input {
   outline: 0; }
@@ -64,9 +66,13 @@ em, i {
 b, strong, h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
-.clear:after {
+.clearfix {
+  display: block; }
+
+.clearfix:after {
   content: "";
   display: block;
   clear: both;
-  height: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }

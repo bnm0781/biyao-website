@@ -14,6 +14,8 @@
 .rightBar-serve {
   display: none;
   background: url("http://static.biyao.com/pc/common/img/master/rightBar-serve.png?v=biyao_7628a55") 0 center no-repeat; }
+  .rightBar-serve:hover {
+    background: url("http://static1.biyao.com/pc/common/img/master/rightBar-serveActive.png?v=biyao_8d8893c") 0 center no-repeat; }
   .rightBar-serve a {
     display: block;
     height: 100%; }
@@ -21,14 +23,22 @@
 .rightBar-phone {
   display: none;
   background: url("http://static3.biyao.com/pc/common/img/master/rightBar-phone.png?v=biyao_1a50895") 0 center no-repeat; }
+  .rightBar-phone:hover {
+    background: url("http://static4.biyao.com/pc/common/img/master/rightBar-phoneActive.png?v=biyao_75dfab4") 0 center no-repeat; }
 
 .rightBar-share {
   display: none;
   background: url("http://static2.biyao.com/pc/common/img/master/rightBar-share.png?v=biyao_c772a8c") 0 center no-repeat; }
+  .rightBar-share:hover {
+    background: url("http://static3.biyao.com/pc/common/img/master/rightBar-shareActive.png?v=biyao_2def371") 0 center no-repeat; }
 
 .rightBar-code {
   position: relative;
   background: url("http://static4.biyao.com/pc/common/img/master/rightBar-code.png?v=biyao_b5f91da") 0 center no-repeat; }
+  .rightBar-code:hover {
+    background: url("http://static.biyao.com/pc/common/img/master/rightBar-codeActive.png?v=biyao_4688a55") 0 center no-repeat; }
+  .rightBar-code:hover div {
+    display: block; }
   .rightBar-code div {
     position: absolute;
     top: -65px;
@@ -74,3 +84,5 @@
 
 .rightBar-top {
   background: url("http://static1.biyao.com/pc/common/img/master/rightBar-top.png?v=biyao_f0bb946") 0 center no-repeat; }
+  .rightBar-top:hover {
+    background: url("http://static2.biyao.com/pc/common/img/master/rightBar-topActive.png?v=biyao_7abc224") 0 center no-repeat; }

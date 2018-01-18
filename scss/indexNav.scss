@@ -55,6 +55,12 @@
 }
 .nav-main{
 	width: 200px;
+	&:hover{
+		background: rgba(255,255,255,0.2);
+		ul{
+			display: block;
+		}
+	}
 	>p{
 		height: 40px;
 		line-height: 40px;
@@ -62,6 +68,9 @@
 		a{
 			font-size: 14px;
 			color: #fff;
+			&:hover{
+				color: #f7b200;
+			}
 		}
 		span{
 			margin: 0 5px;
@@ -114,6 +123,9 @@
 	a{
 		text-align: center;
 		color: #808080;
+		&:hover{
+			color: #523669;
+		}
 	}
 }
 .nav-search{
@@ -164,6 +176,9 @@
 		padding: 0 10px;
 		line-height: 32px;
 		cursor: pointer;
+		&:hover{
+			background: #f0f0f0;
+		}
 	}
 }
 .nav-index{
@@ -191,6 +206,10 @@
 			margin-right: 20px;
 			line-height: 35px;
 			color: #808080;
+			&:hover{
+				color: #f7b200;
+				background: none;
+			}
 		}
 	}
 }
@@ -231,6 +250,9 @@
 	}
 	a{
 		color: #333;
+		&:hover{
+			color: #f7b200;
+		}
 	}
 	.nav-tab-last{
 		border: 0;

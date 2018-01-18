@@ -74,9 +74,15 @@
 	a{
 		font-size: 12px;
 		color: #808080;
+		&:hover{
+			color: #523669;
+		}
 	}
 	.footer-wxCode{
 		position: relative;
+		&:hover div{
+			display: block;
+		}
 		div{
 			position: absolute;
 			top: -46px;

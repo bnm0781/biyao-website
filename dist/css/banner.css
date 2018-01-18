@@ -6,6 +6,8 @@
 
 .banner-slider {
   position: relative; }
+  .banner-slider:hover span {
+    display: block; }
   .banner-slider > ul {
     height: 360px; }
   .banner-slider li {

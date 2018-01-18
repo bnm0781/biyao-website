@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="必要商城是一家C2M模式的电子商务平台，旨在通过用户直连制造商（Customer TO Manufactory），砍掉传统零售中的所有加价环节，使消费者以出厂成本价就能买到高品质的产品。"/>
+	<meta name="Keywords" content="必要;必要商城;必要平台;必要电商;C2M商城;工业4.0;定制平台;定制商城;奢侈品定制;定制鞋;定制包;定制眼镜;定制饰品;定制运动服;定制运动鞋" />
+	<meta property="qc:admins" content="35713343766211176375747716" />
+	<meta name="renderer" content="webkit"/>
+ 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>必要  - 买大牌制造商产品，上必要</title>
+	<link href="http://static.biyao.com/pc/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/login-regist.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+</head>
+<body>
+	<!-- account-header -->
+	<div class="account-header">
+		<div>
+			<a href="http://localhost:8888/"></a>
+			<p>欢迎来到必要，请<span class="account-login">登录</span>|<span class="account-regist">注册</span></p>
+		</div>
+	</div>
+	<!-- account-main -->
+	<div class="account-main">
+		<h4 class="account-title"><b></b>用户登录<a class="pwd-btn hide">密码登录<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAByklEQVRYhe2WrW8UQRyGRyCaUIFAVPQPOFGBqEQ2obICwZc4WVFRg6u4BHGiAtFs5ve8IyY5jyLhD4AQBAKB4KMJCETFyYqKFcXMXuaGpb3Q3UtI7k1G7Mxk3mfe+VrnVlrpfxIw8N4PzewI2AshbC7F2Hu/JekDcFmU2ns/Go1Gt3oxnkwmt4HnwI8W81kxs6NeACT5wuyjmW3HGNeAPeA81V8Adzs1TwZzcZdrbmb7WQq7nZmHEDaBaQFwWvbz3m817d77YWcAwMvM+CcwlnRc9jOzZ1kC210CnGXmc2sbY1xzzjlJ97J+dVN/Y1VVtd7MStKLsj1tzLnlkRQ7MXfOuRjjnWzgP2IHQrE3Lqqq2ugMIJn8SoNP88GBQXb0mnIGDMoxzGz/n8GAcWFwkmZemrdCSDpuTk4b3LVKF82nK26/0/QenLdBAAfXJbQoxBj4DNTAVNJr4LDZ8cD9KyBObgyxiNogvPfDVFfnqXV2VBeAuARqM3sIHKbvd729mn+BmMUuaaeqqvXezBtJegp8z67nt5J2ejfOBTwBvmVJvJf0YKkQIYTHwNcM4s1SAZxzTtIj4EsCeLV0AOdm/wsHnb8VK63UpX4DmUwo+wNzmIkAAAAASUVORK5CYII="></a><a class="sms-btn">短信登录<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAs0lEQVRYhe2XoRXCQBBEU0oKQFAGEhmBQFACPSCRszOGIhCUgaAABJISIg5zJ5O83IaHYPe9cbe7/82Z2aaJmigzO5J8kkwz9TCzjWs5ycPA8BeAtkhSN/CuB7DyANzKwuzCHL1z78kDcCeZALQVvVuSSdIlAAIgAAIgAAIgAAIgADwAJQ1XZ8JFHPBoKQeGhnckz18DkHQdGd5LWgPYT7hQH8vNbOf8At9hkiF+d5r9RX0AmF67ycoCiKUAAAAASUVORK5CYII="></a></h4>
+		<ul class="pwd-login">
+			<li>
+				<input type="text" name="userName" autocomplete="new-password" id="userName" maxlength="11" placeholder="请输入手机号">
+				<i class="account-error"></i>
+			</li>
+			<li>
+				<input type="password" value name="password" autocomplete="new-password" id="password" maxlength="32" placeholder="请输入登录密码">
+				<i class="account-error"></i>
+			</li>
+			<li class="login-auto">
+				<span><b></b>下次自动登录</span>
+				<a href="javascript:void(0);" id="findPassword">忘记密码</a>
+			</li>
+			<li class="account-prompt"></li>
+			<li class="account-btn">登录</li>
+		</ul>
+		<ul class="sms-login hide">
+			<li>
+				<input type="text" name="phone-number" class="sms-phone-number" autocomplete="false" placeholder="请输入手机号" maxlength="11">
+				<i class="account-error"></i>
+			</li>
+			<li class="account-phoneCode">
+				<input type="text" name="phoneCode" autocomplete="new-password" placeholder="请输入短信验证码" class="sms-code" maxlength="6">
+				<span>获取验证码</span>
+				<i class="account-error"></i>
+			</li>
+			<li style="height: 29px;"></li>
+			<li class="account-sms-btn">登录</li>
+		</ul>
+		<div class="login-third">
+			<span>使用第三方账号登录：</span>
+			<a href="javascript:void(0);" id="thirdWX" class="third-wx"></a>
+			<a href="javascript:void(0);" id="thirdQQ" class="third-qq"></a>
+		</div>
+		<p class="biyao-caution"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABrElEQVQ4T4WTwVErMQyGf/ngPT5eBYQKHlRAqIBHB8kltm+hAzqA265zCR08qIClAqACQgWEY3KQGHlsxlnCPM/s7ForfZJ/yYQ9a7FYHDPzKREd6G8RWRtjHmez2fPQnWpDDrwmojGANwCr/H8E4FBEemPMZQ36AmiwiDwAeGHmqxBCX8Pbth0bY64A/CGiswJJgLZtR8aYJwD3zrlJCVS7focQSiWIMd4COGfmE7UnQNd1dwBG3vvjOmuMcSUi4r0/qu1d1z0T0atz7oJy9lcAF845BX2tGKMA+HDOJTHLijH+BfCPmY8oxjgHcO2c2xFUnWOMSQfnnIq6sxTOzFMFqDDjH5x6baH3XjMOAQrv/wdQuFaQ3nt0uFMNJsaY5Q9HSJmH2iyXy4PtdvuejlBvQgjaolqsvRWUpNba30k47a2InDZNczKdTteFkNu1rvXRhJvNJs2M936eANnYE5FYa89qSF1RrvZBRKhpmrH67YwyM98S0SGAubX2voBy4DmAGxF5M8ZMdka5ZMmOOhf6/BoI/6EAa+1NXeG34SlBenl0vPN+Nbxcxe8ToiL1w9AJJgYAAAAASUVORK5CYII=">必要不会以任何理由要求您转账汇款，谨防诈骗。</p>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div>
+			<ul class="footer-serve clearfix">
+				<li>
+					<dl>
+						<dt class="serve-make"></dt>
+						<dd>直连一线制造</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt class="serve-backage"></dt>
+						<dd>全品类包邮</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt class="serve-pay"></dt>
+						<dd>平台先行赔付</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt class="serve-refund"></dt>
+						<dd>7天无忧退换货</dd>
+					</dl>
+				</li>
+			</ul>
+			<div class="footer-main clearfix">
+				<ul class="footer-detail clearfix">
+					<li>
+						<h2>帮助中心</h2>
+						<ul>
+							<li><a href="javascript:void(0);" target="_blank">平台政策</a></li>
+							<li><a href="javascript:void(0);" id="supEnter">商家入驻</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>关注必要</h2>
+						<ul>
+							<li><a href="javascript:void(0);" target="_blank">新浪微博</a></li>
+							<li class="footer-wxCode">
+								<a href="javascript:void(0);">官方微信</a>
+								<div>
+									<i></i>
+									<span></span>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h2>关于必要</h2>
+						<ul>
+							<li><a href="javascript:void(0);" target="_blank">了解必要</a></li>
+							<li><a href="javascript:void(0);" target="_blank">加入必要</a></li>
+							<li><a href="javascript:void(0);" target="_blank">联系我们</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>下载必要APP</h2>
+						<p></p>
+					</li>
+				</ul>
+				<dl class="footer-contact">
+					<dt>服务监督邮箱</dt>
+					<dd>cs@biyao.com</dd>
+				</dl>
+			</div>
+			<div class="footer-info">
+				<p>
+					<span>Copyright © 2017, BIYAO.COM</span>
+					<span>珠海必要科技有限公司</span>
+					<span>
+						<a href="javascript:void(0);" target="_blank">粤公网安备44049102496139号</a>
+						<a href="javascript:void(0);" target="_blank">粤ICP备13088531号-2</a>
+					</span>
+				</p>
+				<p>
+					<span>公司地址：珠海市唐家湾镇哈工大路1号1栋E301-15</span>
+					<span>公司电话：0756-3635580</span>
+				</p>
+				<p>必要商城提示您，产品“由某制造商出品”仅为陈述制造商既往生产经历，并不意味着相应产品与特定品牌产品相同或近似。</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

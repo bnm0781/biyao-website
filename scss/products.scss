@@ -1,0 +1,403 @@
+body{
+	background: #fff;
+}
+.section{
+	width: 1080px;
+	margin: 10px auto;
+}
+.section-bread{
+	margin: 20px 0;
+	a{
+		color: #666;
+	}
+	span{
+		color: #808080;
+	}
+}
+.section-editor{
+	position: relative;
+}
+.editor-main{
+	float: left;
+}
+.editor-picture{
+	p{
+		position: relative;
+		float: left;
+		width: 460px;
+		height: 460px;
+		margin-right: 18px;
+		border: 1px solid #ccc;
+		text-align: center;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	ul{
+		float: left;
+		height: 462px;
+		overflow: hidden;
+	}
+	li{
+		height: 80px;
+		width: 80px;
+		margin-bottom: 13px;
+		border: 1px solid #ccc;
+		cursor: pointer;
+		text-align: center;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.main-active{
+		border: 1px solid #523669;
+	}
+}
+.editor-policy{
+	margin-top: 20px;
+	li{
+		position: relative;
+		float: left;
+		margin-right: 10px;
+		cursor: pointer;
+		&:hover div{
+			display: block;
+		}
+	}
+	span{
+		padding-left: 20px;
+		color: #333;
+		background: url("http://static1.biyao.com/pc/common/img/master/policy-icon.png?v=biyao_ac164b4") left center no-repeat;
+	}
+	div{
+		position: absolute;
+		top: 25px;
+		left: -55px;
+		z-index: 2;
+		display: none;
+		width: 230px;
+		padding: 10px 15px;
+		border-radius: 3px;
+		box-shadow: 0 1px 10px 4px rgba(0,0,0,0.05);
+		background: #fff;
+		line-height: 27px;
+		color: #666;
+	}
+	i{
+		position: absolute;
+		top: -15px;
+		left: 80px;
+		z-index: 1;
+		width: 30px;
+		height: 15px;
+		background: url("http://static2.biyao.com/pc/common/img/master/triangle.png?v=biyao_e5088e8") no-repeat;
+	}
+}
+.editor-panel{
+	float: right;
+	width: 465px;
+}
+.panel-top{
+	border-bottom: 1px solid #ccc;
+	h1{
+		font-size: 20px;
+		font-weight: normal;
+		color: #333;
+		margin-bottom: 14px;
+	}
+	p{
+		font-size: 14px;
+		color: #999;
+		margin-bottom: 14px;
+	}
+}
+.panel-main{
+	color: #666;
+	>li{
+		overflow: hidden;
+		margin-top: 15px;
+		>span{
+			float: left;
+			width: 65px;
+			font-size: 14px;
+		}
+		>div{
+			float: right;
+			width: 400px;
+		}
+	}
+	.panel-specs{
+		margin-top: 15px;
+		overflow: visible;
+	}
+	.panel-sizeImg{
+		margin: 0 0 15px;
+	}
+	.panel-count{
+		margin: 0 0 15px;
+		>span{
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+}
+.panel-press{
+	>span{
+		height: 35px;
+		line-height: 42px;
+	}
+	>div{
+		height: 35px;
+		>span{
+			display: inline-block;
+			height: 35px;
+			font-size: 14px;
+		}
+	}
+}
+.panel-maney{
+	color: #f85453;
+	i{
+		display: inline-block;
+		height: 35px;
+		vertical-align: -3px;
+		font-size: 28px;
+	}
+}
+.panel-duration{
+	display: inline-block;
+	height: 35px;
+	margin-left: 40px;
+	line-height: 35px;
+	vertical-align: 1px;
+}
+.specs-dimension{
+	>span{
+		float: left;
+		width: 65px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 14px;
+	}
+	>div{
+		float: right;
+		width: 400px;
+	}
+	ul{
+		width: 406px;
+	}
+	li{
+		position: relative;
+		display: inline-block;
+		margin: 0 6px 15px 0;
+		border: 1px solid #ccc;
+		cursor: pointer;
+		em{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			display: none;
+			width: 22px;
+			height: 22px;
+			background: url("http://static2.biyao.com/pc/common/img/master/specs-active.png?v=biyao_d364fe2") no-repeat;
+		}
+	}
+	.lowModel-specs-active{
+		border: 1px solid #523669;
+		em{
+			display: block;
+		}
+	}
+}
+.specs-detail{
+	height: 33px;
+	line-height: 33px;
+	padding: 0 23px;
+	font-size: 14px;
+}
+.panel-sizeImg{
+	img{
+		display: none;
+	}
+	span{
+		cursor: pointer;
+	}
+}
+.panel-num{
+	float: left;
+	border: 1px solid #b3b3b3;
+	padding: 1px 0;
+	overflow: hidden;
+	span{
+		float: left;
+		width: 28px;
+		height: 26px;
+		text-align: center;
+		line-height: 26px;
+		font-size: 14px;
+		color: #000;
+	}
+	.panel-minus{
+		width: 23px;
+		border-right: 1px solid #e4e3e5;
+		color: #8c8b8b;
+		cursor: pointer;
+	}
+	.panel-add{
+		width: 23px;
+		border-left: 1px solid #e4e3e5;
+		color: #8c8b8b;
+		cursor: pointer;
+	}
+}
+.panel-bottom{
+	margin-left: 65px;
+	p{
+		display: inline-block;
+		width: 180px;
+		height: 40px;
+		line-height: 40px;
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+		background: #f7b200;
+		cursor: pointer;
+	}
+	.panel-buyNow{
+		margin-right: 15px;
+		background: #523669;
+	}
+}
+.pop-mark, .pop-mark-ifrmae{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	opacity: 0;
+}
+.pop-mark{
+	background: #000;
+	opacity: 0.5;
+	z-index: 10000;
+}
+.pop{
+	position: fixed;
+	display: none;
+	z-index: 10001;
+	background-color: #fff;
+	padding: 0 20px 25px;
+}
+.pop-hd{
+	height: 40px;
+	border-bottom: 1px dotted #ccc;
+	line-height: 40px;
+	font-size: 18px;
+	background-color: #fff;
+	.pop-close{
+		height: 16px;
+		width: 16px;
+		display: block;
+		float: right;
+		margin: 12px 0 0 0;
+		background: url("http://static2.biyao.com/pc/common/img/cls_btn.png?v=biyao_b68db81") no-repeat;
+		cursor: pointer;
+	}
+}
+.section-view{
+	position: relative;
+	margin-top: 40px;
+	padding-top: 60px;
+}
+.view-title{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	height: 60px;
+	width: 1078px;
+	background: #eeecef;
+	border: 1px solid #ccc;
+	a{
+		float: left;
+		width: 240px;
+		border-right: 1px solid #ccc;
+		text-align: center;
+		color: #333;
+		font-size: 16px;
+		font-weight: normal;
+		i{
+			display: inline-block;
+			max-width: 170px;
+			vertical-align: middle;
+		}
+	}
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 60px;
+		margin: 0 12px;
+		background: url("http://static1.biyao.com/pc/common/img/master/supplier-icon.png?v=biyao_9f34fa4") center no-repeat;
+		vertical-align: middle;
+	}
+	ul{
+		float: left;
+		border-left: none;
+		line-height: 60px;
+		text-align: center;
+	}
+	li{
+		position: relative;
+		float: left;
+		width: 180px;
+		border-right: 1px solid #ccc;
+		color: #333;
+		font-size: 16px;
+		cursor: pointer;
+		line-height: 60px;
+		i{
+			position: absolute;
+			display: none;
+			height: 3px;
+			background: #523669;
+			left: 0;
+			bottom: -1px;
+			width: 100%;
+		}
+	}
+	.view-active{
+		background: #fff;
+		color: #523669;
+		i{
+			display: block;
+		}
+	}
+}
+.view-shopCar{
+	float: right;
+	display: none;
+	width: 180px;
+	height: 40px;
+	margin: 10px 20px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	background: #f7b200;
+	cursor: pointer;
+}
+.f18{
+	font-size: 18px!important;
+}
+.pop-bd{
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+.sizeImg-dialog{
+	img{
+		width: 560px;
+	}
+}

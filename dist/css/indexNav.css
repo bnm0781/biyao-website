@@ -50,6 +50,10 @@
 
 .nav-main {
   width: 200px; }
+  .nav-main:hover {
+    background: rgba(255, 255, 255, 0.2); }
+    .nav-main:hover ul {
+      display: block; }
   .nav-main > p {
     height: 40px;
     line-height: 40px;
@@ -57,6 +61,8 @@
     .nav-main > p a {
       font-size: 14px;
       color: #fff; }
+      .nav-main > p a:hover {
+        color: #f7b200; }
     .nav-main > p span {
       margin: 0 5px;
       font-size: 16px;
@@ -103,6 +109,8 @@
   .nav-item a {
     text-align: center;
     color: #808080; }
+    .nav-item a:hover {
+      color: #523669; }
 
 .nav-search {
   position: relative;
@@ -148,6 +156,8 @@
     padding: 0 10px;
     line-height: 32px;
     cursor: pointer; }
+    .nav-search li:hover {
+      background: #f0f0f0; }
 
 .nav-index .nav-search input {
   width: 488px; }
@@ -172,6 +182,9 @@
   margin-right: 20px;
   line-height: 35px;
   color: #808080; }
+  .nav-index .nav-search li:hover {
+    color: #f7b200;
+    background: none; }
 
 .nav-tab {
   position: absolute;
@@ -206,5 +219,7 @@
     font-size: 16px; }
   .nav-tab a {
     color: #333; }
+    .nav-tab a:hover {
+      color: #f7b200; }
   .nav-tab .nav-tab-last {
     border: 0; }

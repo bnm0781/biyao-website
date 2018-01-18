@@ -1,24 +1,16 @@
 .header {
   height: 30px;
-  background: #333333; }
+  background: #333333;
+  padding-bottom: 98px; }
   .header > div {
     width: 1080px;
     height: 30px;
     margin: 0 auto; }
+  .header a:hover {
+    color: #fff; }
 
 .header-index {
   padding-bottom: 145px; }
-
-.clearfix {
-  display: block; }
-
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
 
 .head-nav {
   float: left;
@@ -62,6 +54,8 @@
 
 .user-app {
   position: relative; }
+  .user-app:hover div {
+    display: block; }
   .user-app a {
     color: #ccc; }
   .user-app div {

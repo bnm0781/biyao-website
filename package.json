@@ -11,10 +11,14 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.9",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
     "gulp-connect": "^5.2.0",
-    "gulp-sass-china": "^3.1.0"
+    "gulp-sass-china": "^3.1.0",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-stream": "^4.0.0"
   },
   "dependencies": {}
 }

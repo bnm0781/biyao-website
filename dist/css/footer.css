@@ -65,8 +65,12 @@
   .footer-detail a {
     font-size: 12px;
     color: #808080; }
+    .footer-detail a:hover {
+      color: #523669; }
   .footer-detail .footer-wxCode {
     position: relative; }
+    .footer-detail .footer-wxCode:hover div {
+      display: block; }
     .footer-detail .footer-wxCode div {
       position: absolute;
       top: -46px;
