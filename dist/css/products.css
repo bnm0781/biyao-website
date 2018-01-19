@@ -18,7 +18,7 @@ body {
 .editor-main {
   float: left; }
 
-.editor-picture p {
+.editor-picture p, .editor-picture div#vs-content span, div#vs-content .editor-picture span, .editor-picture div#vs-content h1, div#vs-content .editor-picture h1, .editor-picture div#vs-content h2, div#vs-content .editor-picture h2, .editor-picture div#vs-content h3, div#vs-content .editor-picture h3, .editor-picture div#vs-content h4, div#vs-content .editor-picture h4, .editor-picture div#vs-content h5, div#vs-content .editor-picture h5, .editor-picture div#vs-content h6, div#vs-content .editor-picture h6, .editor-picture div#vs-content em, div#vs-content .editor-picture em, .editor-picture div#vs-content td, div#vs-content .editor-picture td, .editor-picture div#vs-content th, div#vs-content .editor-picture th, .editor-picture div#vs-content u, div#vs-content .editor-picture u, .editor-picture div#vs-content b, div#vs-content .editor-picture b, .editor-picture div#vs-content i, div#vs-content .editor-picture i, .editor-picture div#vs-content s, div#vs-content .editor-picture s {
   position: relative;
   float: left;
   width: 460px;
@@ -26,7 +26,7 @@ body {
   margin-right: 18px;
   border: 1px solid #ccc;
   text-align: center; }
-  .editor-picture p img {
+  .editor-picture p img, .editor-picture div#vs-content span img, div#vs-content .editor-picture span img, .editor-picture div#vs-content h1 img, div#vs-content .editor-picture h1 img, .editor-picture div#vs-content h2 img, div#vs-content .editor-picture h2 img, .editor-picture div#vs-content h3 img, div#vs-content .editor-picture h3 img, .editor-picture div#vs-content h4 img, div#vs-content .editor-picture h4 img, .editor-picture div#vs-content h5 img, div#vs-content .editor-picture h5 img, .editor-picture div#vs-content h6 img, div#vs-content .editor-picture h6 img, .editor-picture div#vs-content em img, div#vs-content .editor-picture em img, .editor-picture div#vs-content td img, div#vs-content .editor-picture td img, .editor-picture div#vs-content th img, div#vs-content .editor-picture th img, .editor-picture div#vs-content u img, div#vs-content .editor-picture u img, .editor-picture div#vs-content b img, div#vs-content .editor-picture b img, .editor-picture div#vs-content i img, div#vs-content .editor-picture i img, .editor-picture div#vs-content s img, div#vs-content .editor-picture s img {
     max-width: 100%;
     max-height: 100%; }
 
@@ -95,7 +95,7 @@ body {
     font-weight: normal;
     color: #333;
     margin-bottom: 14px; }
-  .panel-top p {
+  .panel-top p, .panel-top div#vs-content span, div#vs-content .panel-top span, .panel-top div#vs-content h1, div#vs-content .panel-top h1, .panel-top div#vs-content h2, div#vs-content .panel-top h2, .panel-top div#vs-content h3, div#vs-content .panel-top h3, .panel-top div#vs-content h4, div#vs-content .panel-top h4, .panel-top div#vs-content h5, div#vs-content .panel-top h5, .panel-top div#vs-content h6, div#vs-content .panel-top h6, .panel-top div#vs-content em, div#vs-content .panel-top em, .panel-top div#vs-content td, div#vs-content .panel-top td, .panel-top div#vs-content th, div#vs-content .panel-top th, .panel-top div#vs-content u, div#vs-content .panel-top u, .panel-top div#vs-content b, div#vs-content .panel-top b, .panel-top div#vs-content i, div#vs-content .panel-top i, .panel-top div#vs-content s, div#vs-content .panel-top s {
     font-size: 14px;
     color: #999;
     margin-bottom: 14px; }
@@ -221,7 +221,7 @@ body {
 
 .panel-bottom {
   margin-left: 65px; }
-  .panel-bottom p {
+  .panel-bottom p, .panel-bottom div#vs-content span, div#vs-content .panel-bottom span, .panel-bottom div#vs-content h1, div#vs-content .panel-bottom h1, .panel-bottom div#vs-content h2, div#vs-content .panel-bottom h2, .panel-bottom div#vs-content h3, div#vs-content .panel-bottom h3, .panel-bottom div#vs-content h4, div#vs-content .panel-bottom h4, .panel-bottom div#vs-content h5, div#vs-content .panel-bottom h5, .panel-bottom div#vs-content h6, div#vs-content .panel-bottom h6, .panel-bottom div#vs-content em, div#vs-content .panel-bottom em, .panel-bottom div#vs-content td, div#vs-content .panel-bottom td, .panel-bottom div#vs-content th, div#vs-content .panel-bottom th, .panel-bottom div#vs-content u, div#vs-content .panel-bottom u, .panel-bottom div#vs-content b, div#vs-content .panel-bottom b, .panel-bottom div#vs-content i, div#vs-content .panel-bottom i, .panel-bottom div#vs-content s, div#vs-content .panel-bottom s {
     display: inline-block;
     width: 180px;
     height: 40px;
@@ -275,6 +275,11 @@ body {
   position: relative;
   margin-top: 40px;
   padding-top: 60px; }
+  .section-view .view-retract {
+    position: fixed;
+    top: 65px;
+    left: 50%;
+    margin-left: -540px; }
 
 .view-title {
   position: absolute;
@@ -344,6 +349,202 @@ body {
   text-align: center;
   background: #f7b200;
   cursor: pointer; }
+
+.view-retract .view-shopCar {
+  display: block; }
+
+.view-supplier {
+  float: left;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 20px; }
+
+.supplier-into {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background: #f7b200;
+  cursor: pointer; }
+
+.supplier-logo {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #ccc; }
+  .supplier-logo img {
+    width: 76px;
+    height: 76px; }
+  .supplier-logo div {
+    position: absolute;
+    top: 90px;
+    left: -1px;
+    display: none;
+    width: 180px;
+    padding: 20px 10px 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.05);
+    background: #fff; }
+  .supplier-logo:hover div {
+    display: block; }
+  .supplier-logo b {
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    z-index: 1;
+    width: 30px;
+    height: 15px;
+    background: url("http://static.biyao.com/pc/common/img/master/triangle.png?v=biyao_e5088e8") no-repeat; }
+  .supplier-logo span {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f2f2f2; }
+  .supplier-logo p, .supplier-logo div#vs-content span, div#vs-content .supplier-logo span, .supplier-logo div#vs-content h1, div#vs-content .supplier-logo h1, .supplier-logo div#vs-content h2, div#vs-content .supplier-logo h2, .supplier-logo div#vs-content h3, div#vs-content .supplier-logo h3, .supplier-logo div#vs-content h4, div#vs-content .supplier-logo h4, .supplier-logo div#vs-content h5, div#vs-content .supplier-logo h5, .supplier-logo div#vs-content h6, div#vs-content .supplier-logo h6, .supplier-logo div#vs-content em, div#vs-content .supplier-logo em, .supplier-logo div#vs-content td, div#vs-content .supplier-logo td, .supplier-logo div#vs-content th, div#vs-content .supplier-logo th, .supplier-logo div#vs-content u, div#vs-content .supplier-logo u, .supplier-logo div#vs-content b, div#vs-content .supplier-logo b, .supplier-logo div#vs-content i, div#vs-content .supplier-logo i, .supplier-logo div#vs-content s, div#vs-content .supplier-logo s {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #333;
+    line-height: 20px; }
+
+.supplier-info ul {
+  padding-top: 18px; }
+
+.supplier-info li {
+  margin-bottom: 10px;
+  color: #333; }
+
+.supplier-info i {
+  color: #f7b200; }
+
+.supplier-recommen {
+  overflow: hidden; }
+  .supplier-recommen li {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; }
+  .supplier-recommen a {
+    display: block; }
+  .supplier-recommen i {
+    display: block;
+    width: 200px;
+    height: 200px; }
+  .supplier-recommen img {
+    width: 100%;
+    height: 100%; }
+  .supplier-recommen dl {
+    margin-top: 20px;
+    text-align: center; }
+  .supplier-recommen dt {
+    font-size: 16px;
+    color: #333; }
+  .supplier-recommen dd {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff3333; }
+
+.view-main {
+  float: left;
+  width: 800px;
+  padding: 40px 0 0 38px; }
+  .view-main > div {
+    display: none; }
+  .view-main .view-detail {
+    display: block;
+    width: 100%; }
+
+.view-detail .wrap, .view-detail .mg-t30, .view-detail .ie78 {
+  width: 800px;
+  margin: 0;
+  padding: 0; }
+
+.wrap .imgText-property, .view-detail .mg-t30 .imgText-property, .view-detail .ie78 .imgText-property {
+  width: 800px;
+  margin: 0 auto 20px; }
+  .wrap .imgText-property dl, .view-detail .mg-t30 .imgText-property dl, .view-detail .ie78 .imgText-property dl {
+    line-height: 32px;
+    border-bottom: 2px dotted #cecece;
+    font-size: 16px;
+    color: #333; }
+  .wrap .imgText-property dt, .view-detail .mg-t30 .imgText-property dt, .view-detail .ie78 .imgText-property dt {
+    display: inline-block;
+    width: 160px;
+    font-size: 16px;
+    color: #666;
+    vertical-align: top; }
+  .wrap .imgText-property dd, .view-detail .mg-t30 .imgText-property dd, .view-detail .ie78 .imgText-property dd {
+    display: inline-block;
+    width: 630px;
+    font-size: 16px;
+    color: #333; }
+
+.eval-select ul {
+  float: left; }
+
+.eval-select li {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer; }
+
+.eval-select span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  background: url("http://static1.biyao.com/pc/common/img/master/eval-noSelect.png?v=biyao_e63503b") no-repeat; }
+
+.eval-select li.eval-active span {
+  background: url("http://static2.biyao.com/pc/common/img/master/eval-select.png?v=biyao_a02d476") no-repeat; }
+
+.eval-select p, .eval-select div#vs-content span, div#vs-content .eval-select span, .eval-select div#vs-content h1, div#vs-content .eval-select h1, .eval-select div#vs-content h2, div#vs-content .eval-select h2, .eval-select div#vs-content h3, div#vs-content .eval-select h3, .eval-select div#vs-content h4, div#vs-content .eval-select h4, .eval-select div#vs-content h5, div#vs-content .eval-select h5, .eval-select div#vs-content h6, div#vs-content .eval-select h6, .eval-select div#vs-content em, div#vs-content .eval-select em, .eval-select div#vs-content td, div#vs-content .eval-select td, .eval-select div#vs-content th, div#vs-content .eval-select th, .eval-select div#vs-content u, div#vs-content .eval-select u, .eval-select div#vs-content b, div#vs-content .eval-select b, .eval-select div#vs-content i, div#vs-content .eval-select i, .eval-select div#vs-content s, div#vs-content .eval-select s {
+  text-align: right;
+  font-size: 16px;
+  color: #333; }
+
+.eval-select i {
+  color: #f7b200; }
+
+.eval-list > li {
+  margin-top: 30px;
+  border-top: 1px solid #ccc; }
+
+.eval-noComment {
+  padding-top: 35px;
+  color: #808080; }
+
+#moreProduct {
+  display: none;
+  width: 200px;
+  height: 48px;
+  margin: 20px auto;
+  padding: 0 20px;
+  border-radius: 2px;
+  line-height: 48px;
+  text-align: center;
+  background: #ccc;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+div#vs-content {
+  font-size: 16px; }
+  div#vs-content dl > dt {
+    font-size: 16px; }
+  div#vs-content dl > dd {
+    font-size: 16px; }
+  div#vs-content p, div#vs-content span, div#vs-content h1, div#vs-content h2, div#vs-content h3, div#vs-content h4, div#vs-content h5, div#vs-content h6, div#vs-content em, div#vs-content td, div#vs-content th, div#vs-content u, div#vs-content b, div#vs-content i, div#vs-content s {
+    font-size: 16px; }
 
 .f18 {
   font-size: 18px !important; }

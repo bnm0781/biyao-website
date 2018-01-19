@@ -1,13 +1,16 @@
+@charset "UTF-8";
 .pub-nav {
   width: 100%;
   background: #333333; }
 
 .wrap {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto; }
   .wrap > ul a:hover {
     color: #fff; }
+
+.wrap, .wrapH {
+  width: 1200px; }
 
 .bd-bottom-ea {
   border-bottom: 1px solid #eae4e8; }
@@ -58,3 +61,282 @@ a {
     line-height: 40px;
     text-align: center;
     display: block; }
+
+table {
+  color: #333333;
+  font: 12px "Microsoft YaHei", 微软雅黑, 宋体, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial; }
+
+.relative {
+  position: relative; }
+
+.shopStepBox {
+  width: 560px;
+  position: absolute;
+  right: 0;
+  top: -73px; }
+
+.publicStepsbox {
+  width: 100%; }
+  .publicStepsbox li {
+    position: relative;
+    float: left;
+    text-align: center; }
+
+.car-step1 {
+  background-position: -30px -23px !important; }
+
+.car-step-icon {
+  background: url("http://static1.biyao.com/pc/buy/img/car_steps.png?v=biyao_011f64a") left center no-repeat;
+  width: 560px;
+  height: 20px; }
+
+.car-step-txt {
+  margin-top: 3px; }
+  .car-step-txt li {
+    width: 140px;
+    float: left;
+    height: 19px;
+    line-height: 19px;
+    color: #666;
+    text-align: center;
+    color: #d5cdda; }
+  .car-step-txt li.checked {
+    color: #724a88; }
+
+.pd-b40 {
+  padding-bottom: 40px !important; }
+
+.bd-b-d5c {
+  border-bottom: 1px solid #d5cdda; }
+
+.lineH24 {
+  line-height: 24px; }
+
+.pd-t30 {
+  padding-top: 30px; }
+
+.pd-b10 {
+  padding-bottom: 10px !important; }
+
+.t-l {
+  text-align: left; }
+
+.col-523 {
+  color: #523669; }
+
+.f18 {
+  font-size: 18px !important; }
+
+.col-666 {
+  color: #666; }
+
+.mg-l10 {
+  margin-left: 10px; }
+
+.sop-table1 {
+  width: 100%;
+  line-height: 20px; }
+  .sop-table1 th {
+    font-size: 12px;
+    font-weight: normal;
+    height: 37px;
+    line-height: 37px; }
+  .sop-table1 td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ccc; }
+  .sop-table1 strong {
+    font-weight: normal; }
+
+.pd-l10 {
+  padding-left: 10px; }
+
+.checked .openIcon {
+  background: url("http://static3.biyao.com/pc/common/img/commonSprite.png?v=biyao_a34ea07") no-repeat -20px -80px; }
+
+.openIcon {
+  width: 15px;
+  height: 15px;
+  background: url("http://static2.biyao.com/pc/common/img/commonSprite.png?v=biyao_a34ea07") no-repeat 0 -80px; }
+
+.mg-r10 {
+  margin-right: 10px; }
+
+i {
+  font-style: normal; }
+
+span {
+  font-weight: normal; }
+
+.none {
+  display: none; }
+
+.order-title {
+  line-height: 35px;
+  background-color: #eee;
+  padding-left: 10px; }
+
+a {
+  color: #333; }
+
+.bg-fff {
+  background: #fff; }
+
+.sop-img {
+  display: block;
+  width: 100px;
+  height: 100px; }
+
+.col-999 {
+  color: #999 !important; }
+
+.mg-t5 {
+  margin-top: 5px !important; }
+
+.w300 {
+  width: 300px; }
+
+.escp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.ff6600 {
+  color: #f49f26; }
+
+.sizeZero {
+  font-size: 0; }
+
+.minus {
+  background: url("http://static4.biyao.com/pc/common/img/commonSprite.png?v=biyao_a34ea07") no-repeat 5px -40px;
+  border: 1px solid #ccc;
+  border-right: none; }
+
+.sign, .signre {
+  width: 27px;
+  height: 30px; }
+
+.inpCom {
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 4px;
+  background-color: #fff;
+  color: #523669; }
+
+.w40 {
+  width: 40px; }
+
+.t-c {
+  text-align: center; }
+
+.plus {
+  background: url("http://static.biyao.com/pc/common/img/commonSprite.png?v=biyao_a34ea07") no-repeat -16px -40px;
+  border: 1px solid #ccc;
+  border-left: none; }
+
+.col-b76 {
+  color: #b768a5; }
+
+.a-delete {
+  width: 12px;
+  height: 12px;
+  background: url("http://static4.biyao.com/pc/buy/img/a_delete.png?v=biyao_5ef7221") -10px -32px no-repeat;
+  display: block; }
+
+.link-09c {
+  color: #09c; }
+
+.tj-box {
+  position: relative; }
+
+.pd-t10 {
+  padding-top: 10px !important; }
+
+.lineH30 {
+  line-height: 30px; }
+
+.pd-r10 {
+  padding-right: 10px; }
+
+.f-l {
+  float: left; }
+
+.col-link {
+  color: #07a6df; }
+
+.f14 {
+  font-size: 14px; }
+
+.f-r {
+  float: right; }
+
+.col-f60 {
+  color: #f49f26; }
+
+.pd-r5 {
+  padding-right: 5px; }
+
+.w80 {
+  width: 80px; }
+
+.mg-r30 {
+  margin-right: 30px; }
+
+em, cite {
+  font-style: normal;
+  font-weight: 400; }
+
+.tallyBox {
+  height: 50px;
+  line-height: 50px !important;
+  border-top: 1px solid #d5cdda;
+  background-color: #eeecef;
+  padding-left: 10px; }
+  .tallyBox p {
+    color: #666;
+    height: 48px;
+    float: right; }
+
+.goonShopping {
+  width: 100px;
+  height: 33px;
+  background: #724A88;
+  line-height: 33px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px; }
+
+.js-btn {
+  width: 85px;
+  height: 33px;
+  line-height: 33px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background: #f49f26; }
+
+.tallyBTnPos {
+  float: right;
+  margin: 10px 10px 0 30px; }
+
+.t-r {
+  text-align: right !important; }
+
+.f20 {
+  font-size: 20px; }
+
+.vTop {
+  vertical-align: top; }
+
+.fb {
+  font-weight: bold; }
+
+.mg-l5 {
+  margin-left: 5px; }

@@ -53,6 +53,9 @@
 		line-height: 40px;
 		color: #f49f26;
 	}
+	.input-error{
+		border: 1px solid #f49f26;
+	}
 }
 .account-title{
 	margin-top: 30px;
@@ -97,6 +100,9 @@
 	a{
 		float: right;
 		color: #07a6df;
+	}
+	.login-remember{
+		background: url("http://static3.biyao.com/pc/common/img/commonSprite.png?v=biyao_a34ea07") no-repeat -20px -80px;
 	}
 }
 .account-prompt{

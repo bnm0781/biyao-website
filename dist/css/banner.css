@@ -13,8 +13,7 @@
   .banner-slider li {
     position: absolute;
     top: 0;
-    left: 0;
-    display: none; }
+    left: 0; }
   .banner-slider a {
     display: block; }
   .banner-slider img {

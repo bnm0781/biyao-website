@@ -31,7 +31,7 @@
 .head-user {
   float: right;
   height: 30px; }
-  .head-user li {
+  .head-user > li {
     display: inline-block;
     float: left;
     height: 30px;
@@ -45,9 +45,66 @@
     margin: 0 18px;
     background: #cccccc;
     vertical-align: middle; }
+  .head-user .user-center {
+    position: relative;
+    display: none; }
 
 .user-out a {
   color: #cccccc; }
+
+.user-center > a {
+  color: #ccc; }
+
+.user-center span {
+  display: inline-block;
+  width: 9px;
+  height: 4px;
+  margin-left: 10px;
+  background: url("http://static3.biyao.com/pc/common/img/master/comSprite.png?v=biyao_78cb01c") 0 -102px no-repeat;
+  vertical-align: middle; }
+
+.user-center:hover span {
+  background: url("http://static4.biyao.com/pc/common/img/master/comSprite.png?v=biyao_78cb01c") 0 -88px no-repeat; }
+
+.user-center div {
+  position: absolute;
+  top: 25px;
+  left: -33px;
+  z-index: 115;
+  display: none; }
+
+.user-center:hover div {
+  display: block; }
+
+.user-center i {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 30px;
+  height: 15px;
+  margin: 0 auto;
+  background: url("http://static.biyao.com/pc/common/img/master/triangle.png?v=biyao_e5088e8") no-repeat;
+  background-size: 100% 100%; }
+
+.user-center ul {
+  min-width: 136px;
+  padding: 10px 0;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.05); }
+
+.user-center li {
+  text-align: center; }
+  .user-center li a {
+    display: block;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333; }
+    .user-center li a:hover {
+      color: #333;
+      background: #f0f0f0; }
 
 .user-login {
   margin-right: 20px; }
