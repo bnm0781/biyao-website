@@ -11,6 +11,23 @@
 		margin: 0 auto;
 	}
 }
+div.retract{
+	display:none;
+	position: fixed;
+	top: 0;
+	.nav-logo{
+		display: none;
+	}
+	.nav-category{
+		display: block;
+	}
+	.nav-search{
+		margin-top: 10px;
+	}
+	.nav-tab{
+		display: none;
+	}
+}
 .nav-index>div{
 	position: relative;
 }
@@ -38,6 +55,22 @@
 			height: 8px;
 			margin-left: 10px;
 			background: url("http://static3.biyao.com/pc/common/img/master/categoryDown.png?v=biyao_0a4f89f") no-repeat;
+		}
+	}
+	&:hover{
+		>p{
+			span{
+				color: #333;
+			}
+			i{
+				background: url("http://static2.biyao.com/pc/common/img/master/categoryUp.png?v=biyao_fcb2eb7") no-repeat;
+			}
+		}
+		>div{
+			position: absolute;
+			left: 0;
+			top: 60px;
+			display: block;
 		}
 	}
 	>div{

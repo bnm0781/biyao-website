@@ -10,6 +10,19 @@
     width: 1080px;
     margin: 0 auto; }
 
+div.retract {
+  display: none;
+  position: fixed;
+  top: 0; }
+  div.retract .nav-logo {
+    display: none; }
+  div.retract .nav-category {
+    display: block; }
+  div.retract .nav-search {
+    margin-top: 10px; }
+  div.retract .nav-tab {
+    display: none; }
+
 .nav-index > div {
   position: relative; }
 
@@ -36,6 +49,15 @@
       height: 8px;
       margin-left: 10px;
       background: url("http://static3.biyao.com/pc/common/img/master/categoryDown.png?v=biyao_0a4f89f") no-repeat; }
+  .nav-category:hover > p span {
+    color: #333; }
+  .nav-category:hover > p i {
+    background: url("http://static2.biyao.com/pc/common/img/master/categoryUp.png?v=biyao_fcb2eb7") no-repeat; }
+  .nav-category:hover > div {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    display: block; }
   .nav-category > div {
     display: none; }
 

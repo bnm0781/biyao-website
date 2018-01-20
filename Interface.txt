@@ -15,3 +15,7 @@ http://www.biyao.com/home/getMoreModule?pageSize=10&pageIndex=2&platform=2
 http://www.biyao.com/home/getMoreModule?pageSize=10&pageIndex=3&platform=2
 
 http://www.biyao.com/products/allRating
+
+
+
+http://www.zcool.com.cn/recommend/contentRecommend?pageSize=20&contentId=6372959_3&day=2018-01-05
