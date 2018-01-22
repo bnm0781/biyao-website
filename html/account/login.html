@@ -28,14 +28,14 @@
 		<ul class="pwd-login">
 			<li>
 				<input type="text" name="userName" autocomplete="new-password" id="userName" maxlength="11" placeholder="请输入手机号">
-				<i class="account-error">请输入手机号</i>
+				<i class="account-error"></i>
 			</li>
 			<li>
 				<input type="password" value name="password" autocomplete="new-password" id="password" maxlength="32" placeholder="请输入登录密码">
-				<i class="account-error">请输入登录密码</i>
+				<i class="account-error"></i>
 			</li>
 			<li class="login-auto">
-				<span><b></b>下次自动登录</span>
+				<span><b></b><i>下次自动登录</i></span>
 				<a href="javascript:void(0);" id="findPassword">忘记密码</a>
 			</li>
 			<li class="account-prompt"></li>
@@ -44,12 +44,12 @@
 		<ul class="sms-login hide">
 			<li>
 				<input type="text" name="phone-number" class="sms-phone-number" autocomplete="false" placeholder="请输入手机号" maxlength="11">
-				<i class="account-error">请输入手机号</i>
+				<i class="account-error"></i>
 			</li>
 			<li class="account-phoneCode">
 				<input type="text" name="phoneCode" autocomplete="new-password" placeholder="请输入短信验证码" class="sms-code" maxlength="6">
 				<span>获取验证码</span>
-				<i class="account-error">短信验证码格式错误</i>
+				<i class="account-error"></i><!-- 验证码已发出，请在10分钟内完成输入。 -->
 			</li>
 			<li style="height: 29px;"></li>
 			<li class="account-sms-btn">登录</li>
@@ -149,3 +149,5 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript" src="../script/require.js"></script>
+<script type="text/javascript" src="../script/index-login.js"></script>

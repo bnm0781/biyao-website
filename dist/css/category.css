@@ -48,6 +48,7 @@
 .category-recommend-1 li {
   position: relative;
   float: left;
+  overflow: hidden;
   list-style: none;
   width: 82px;
   height: 280px;

@@ -1,4 +1,5 @@
-(function($,window,document){
+/* 轮播图部分 */
+define(["jquery"],function($){
 	var index = 0;// 初始下标;
 	class banner{
 		constructor(){
@@ -6,18 +7,27 @@
 		}
 		init(){
 			this.$ul = $(".banner-slider ul");
-			this.$li = this.$ul.children();
-			this.$btns = $(".banner-item li");
-			this.$left = $(".slider-left");
-			this.$right = $(".slider-right");
-			this.reset();
+			this.$li = this.$ul.children();// 每张图片所属li;
+			this.$btns = $(".banner-item li");// 按钮;
+			this.$left = $(".slider-left");// 上一张;
+			this.$right = $(".slider-right");// 下一张;
+			var setup = {
+				url:"http://localhost:8888/data/slider-article-cr2.json",
+				type:"GET",
+				context:this
+			}
+			$.ajax(setup).then(this.reset);
 			this.$btns.click($.proxy(this.change,this));
 			this.$left.click($.proxy(this.prev,this));
 			this.$right.click($.proxy(this.next,this));
 			this.autoplay();
 		}
 		/* 初始化样式设置 */
-		reset(){
+		reset(res){
+			var _this = this;
+			res.data.banners.forEach(function(item,index){
+				_this.$li.find("img").eq(index).attr("src",item.pcImageUrl);
+			})
 			this.$li.eq(index)
 			.siblings().css({
 				display:"none"
@@ -75,5 +85,5 @@
 			this.autoplay();
 		}
 	}
-	new banner();
-})(jQuery,window,document)
+	return new banner();
+})
