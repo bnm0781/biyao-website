@@ -12,7 +12,7 @@ define(["jquery"],function($){
 			this.$left = $(".slider-left");// 上一张;
 			this.$right = $(".slider-right");// 下一张;
 			var setup = {
-				url:"http://localhost:8888/data/slider-article-cr2.json",
+				url:"data/slider-article-cr2.json",
 				type:"GET",
 				context:this
 			}

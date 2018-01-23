@@ -10,49 +10,49 @@ define(["jquery"],function($){
 			this.$categoryRecommend3 = $(".category-recommend-3");// 分类部分;
 			this.$categoryRecommend1.find("li").mouseenter($.proxy(this.accordion));
 			var setup = {
-				url:"http://localhost:8888/data/slider-article-cr2.json",
+				url:"data/slider-article-cr2.json",
 				type:"GET",
 				context:this
 			}
 			$.ajax(setup).then(this.loading);
 
 			var cr30001 = {
-				url:"http://localhost:8888/data/cr3-0.1.json",
+				url:"data/cr3-0.1.json",
 				type:"GET",
 				context:this
 			}
 			$.ajax(cr30001).then(this.cr30001);
 
 			var cr302 = {
-				url:"http://localhost:8888/data/cr3-2.json",
+				url:"data/cr3-2.json",
 				type:"GET",
 				context:this
 			}
 			$.ajax(cr302).then(this.cr302);
 
 			var cr30304050607 = {
-				url:"http://localhost:8888/data/cr3-3.4.5.6.7.json",
+				url:"data/cr3-3.4.5.6.7.json",
 				type:"GET",
 				context:this
 			}
 			$.ajax(cr30304050607).then(this.cr30304050607);
 
 			var cr30809101112 = {
-				url:"http://localhost:8888/data/cr3-8.9.10.11.12.json",
+				url:"data/cr3-8.9.10.11.12.json",
 				type:"GET",
 				context:this
 			}
 			$.ajax(cr30809101112).then(this.cr30809101112);
 
 			var cr31314151617 = {
-				url:"http://localhost:8888/data/cr3-13.14.15.16.17.json",
+				url:"data/cr3-13.14.15.16.17.json",
 				type:"GET",
 				context:this
 			}
 			$.ajax(cr31314151617).then(this.cr31314151617);
 
 			var cr318 = {
-				url:"http://localhost:8888/data/cr3-18.json",
+				url:"data/cr3-18.json",
 				type:"GET",
 				context:this
 			}

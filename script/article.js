@@ -7,7 +7,7 @@ define(["jquery"],function($){
 		init(){
 			this.$article = $(".article");// 专题文章部分;
 			var setup = {
-				url:"http://localhost:8888/data/slider-article-cr2.json",
+				url:"data/slider-article-cr2.json",
 				type:"GET",
 				context:this
 			}

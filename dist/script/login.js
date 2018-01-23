@@ -37,7 +37,7 @@ define(["jquery"],function($){
 		}
 		/* 注册页面跳转 */
 		registJump(){
-			window.location.href = "http://localhost:8888/account/regist.html";
+			window.location.href = "regist.html";
 		}
 		/* 短信登录跳转 */
 		smsBtnJump(){
