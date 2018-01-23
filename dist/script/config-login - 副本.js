@@ -1,8 +1,8 @@
-/* 注册页面配置文件 */
+/* 登录页面配置文件 */
 requirejs.config({
 	paths:{
 		"jquery":"../script/jquery-3.2.1",
-		"regist":"../script/regist",
+		"login":"../script/login",
 		"cookie":"../script/jquery.cookie"
 	}
 })
