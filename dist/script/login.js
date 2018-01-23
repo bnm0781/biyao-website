@@ -17,25 +17,35 @@ define(["jquery"],function($){
 			this.$passwordInput = $("#password");// 密码登录页面密码输入框;
 			this.$loginAuto = $(".login-auto");// 自动登录按钮;
 			this.$smsCode = $(".sms-code");// 短信验证码输入框;
-			this.$accountBtn = $(".account-btn");
-			// var validate = [this.$userNameInput[0].pass,this.$passwordInput[0]];
+			this.$smsGetCode = this.$smsCode.siblings("span");// 获取验证码按钮;
+			this.$accountBtn = $(".account-btn");// 密码登录页面登录按钮;
+			this.$accountBtn.on("click",$.proxy(this.pwdValidate,this));
+			this.$accountSmsBtn = $(".account-sms-btn");
+			this.$accountSmsBtn.on("click",$.proxy(this.smsValidate,this));
+			this.pass1 = "";
+			this.pass2 = "";
+			this.pass3 = "";
+			this.pass4 = "";
 			this.$smsPhoneNumber = $(".sms-phone-number");// 短信登录页面手机号码输入框;
 			/* 密码登录页面手机号码输入框 获焦失焦事件 */
 			this.$userNameInput.focus($.proxy(this.delStyle));
-			this.$userNameInput.blur($.proxy(this.loginUserName));
+			this.$userNameInput.blur($.proxy(this.loginUserName,this));
 			/* 密码登录页面密码输入框 获焦失焦事件 */
 			this.$passwordInput.focus($.proxy(this.delStyle));
-			this.$passwordInput.blur($.proxy(this.loginPassword));
+			this.$passwordInput.blur($.proxy(this.loginPassword,this));
 			/* 自动登录事件 */
 			this.$loginAuto.on("click",$.proxy(this.automatic));
 			/* 短信登录页面手机号码输入框 获焦失焦事件 */
 			this.$smsPhoneNumber.focus($.proxy(this.delStyle));
-			this.$smsPhoneNumber.blur($.proxy(this.loginPhone));
+			this.$smsPhoneNumber.blur($.proxy(this.loginPhone,this));
 			/* 短信验证码输入框 获焦失焦事件 */
 			this.$smsCode.focus($.proxy(this.deleteStyle));
-			this.$smsCode.blur($.proxy(this.loginCode));
+			this.$smsCode.blur($.proxy(this.loginCode,this));
+			/* 获取验证码事件 */
+			this.$smsGetCode.on("click",$.proxy(this.getCode,this));
+
 		}
-		/* 注册页面跳转 */
+		/* 跳转到注册页面 */
 		registJump(){
 			window.location.href = "regist.html";
 		}
@@ -55,42 +65,42 @@ define(["jquery"],function($){
 		}
 		/* 用户名验证 */
 		loginUserName(){
-			var value = this.value;
+			var value = this.$userNameInput[0].value;
 			var reg = /^[1][3,4,5,6,7,8,9][0-9]{9}$/;
 			if(reg.test(value)){
-				this.pass = true;
+				this.pass1 = true;
 			}else if(value == ""){
-				$(this).addClass("input-error")
+				this.$userNameInput.addClass("input-error")
 				.siblings().css({
 					display:"block"
 				}).html("请输入手机号");
-				this.pass = false;
+				this.pass1 = false;
 			}else{
-				$(this).addClass("input-error")
+				this.$userNameInput.addClass("input-error")
 				.siblings().css({
 					display:"block"
 				}).html("账号格式错误，请重新输入");
-				this.pass = false;
+				this.pass1 = false;
 			}
 		}
 		/* 登录密码验证 */
 		loginPassword(){
-			var value = this.value;
+			var value = this.$passwordInput[0].value;
 			var reg = /^[a-zA-Z0-9]{6,10}$/;
 			if(reg.test(value)){
-				this.pass = true;
+				this.pass2 = true;
 			}else if(value == ""){
-				$(this).addClass("input-error")
+				this.$passwordInput.addClass("input-error")
 				.siblings().css({
 					display:"block"
 				}).html("请输入登录密码");
-				this.pass = false;
+				this.pass2 = false;
 			}else{
-				$(this).addClass("input-error")
+				this.$passwordInput.addClass("input-error")
 				.siblings().css({
 					display:"block"
 				}).html("登录密码格式错误");
-				this.pass = false;
+				this.pass2 = false;
 			}
 		}
 		/* 自动登录选项 */
@@ -104,38 +114,38 @@ define(["jquery"],function($){
 		}
 		/* 手机号码验证 */
 		loginPhone(){
-			var value = this.value;
+			var value = this.$smsPhoneNumber[0].value;
 			var reg = /^[1][3,4,5,6,7,8,9][0-9]{9}$/;
 			if(reg.test(value)){
-				this.pass = true;
+				this.pass3 = true;
 			}else if(value == ""){
-				$(this).addClass("input-error")
+				this.$smsPhoneNumber.addClass("input-error")
 				.siblings().css({
 					display:"block"
 				}).html("请输入手机号");
-				this.pass = false;
+				this.pass3 = false;
 			}else{
-				$(this).addClass("input-error")
+				this.$smsPhoneNumber.addClass("input-error")
 				.siblings().css({
 					display:"block"
 				}).html("账号格式错误，请重新输入");
-				this.pass = false;
+				this.pass3 = false;
 			}
 		}
 		/* 短信验证码验证 */
 		loginCode(){
-			var value = this.value;
+			var value = this.$smsCode[0].value;
 			var reg = /^[0-9]{6}$/;
 			if(reg.test(value)){
-				this.pass = true;
+				this.pass4 = true;
 			}else if(value == ""){
-				this.pass = false;
+				this.pass4 = false;
 			}else{
-				$(this).addClass("input-error")
+				this.$smsCode.addClass("input-error")
 				.siblings().eq(1).css({
 					display:"block"
 				}).html("短信验证码格式错误");
-				this.pass = false;
+				this.pass4 = false;
 			}
 		}
 		/* 删除样式 */
@@ -150,6 +160,41 @@ define(["jquery"],function($){
 			.siblings().eq(1).css({
 				display:"none"
 			});
+		}
+		/* 获取验证码 */
+		getCode(){
+			var count = 25;
+			var timer = null;
+			var _this = this;
+			timer = setInterval(function(){
+				if(count == 0){
+					clearTimeout(timer);
+					_this.$smsGetCode.css({
+						background:"rgb(114,74,136)"
+					}).html("获取验证码");
+					_this.$smsGetCode.siblings("i").html("验证码已发出，请在10分钟内完成输入。");
+					count = 25;
+					return;
+				}else{
+					_this.$smsGetCode.css({
+						background:"rgb(213,205,218)"
+					}).html("重新发送（" + count + "s）");
+					_this.$smsGetCode.siblings("i").html("验证码已发出，请在10分钟内完成输入。");
+					count--;
+				}
+			},1000)
+		}
+		pwdValidate(){
+			if(this.pass1 && this.pass2){
+				$.cookie("user",this.$userNameInput[0].value/*'[{"id":' + this.$userNameInput[0].value + ', "password":' + this.$passwordInput[0].value + '}]'*/,{expires:7,path:'/'});
+				window.location.href = "../index.html";
+			}
+		}
+		smsValidate(){
+			if(this.pass3 && this.pass4){
+				$.cookie("user",this.$smsPhoneNumber[0].value/*'[{"id":' + this.$smsPhoneNumber[0].value + ', "password":' + this.$passwordInput[0].value + '}]'*/,{expires:7,path:'/'});
+				window.location.href = "../index.html";
+			}
 		}
 	}
 	return new login();

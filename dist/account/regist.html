@@ -18,7 +18,7 @@
 	<!-- account-header -->
 	<div class="account-header">
 		<div>
-			<a href="http://localhost:8888/"></a>
+			<a href="../index.html"></a>
 			<p>欢迎来到必要，请<span class="account-login">登录</span>|<span class="account-regist">注册</span></p>
 		</div>
 	</div>
@@ -28,7 +28,7 @@
 			<li class="account-title"><b></b>新用户注册</li>
 			<li>
 				<input type="text" name="userName" id="userName" maxlength="11" placeholder="请输入手机号">
-				<i class="account-error">验证码已发出，请在10分钟内完成输入。</i>
+				<i class="account-error"></i>
 			</li>
 			<li class="account-imgCode">
 				<input type="text" name="ingCode" id="ingCode" maxlength="4" placeholder="请输入图中验证码">
@@ -39,21 +39,21 @@
 			<li class="account-phoneCode">
 				<input type="text" name="phoneCode" id="phoneCode" maxlength="6" placeholder="请输入短信验证码">
 				<span>获取验证码</span>
-				<i class="account-error">请输入短信验证码</i><!-- 获取验证码次数已达上限，请三十分钟后再试 -->
+				<i class="account-error"></i><!-- 获取验证码次数已达上限，请三十分钟后再试 -->
 			</li>
 			<li>
 				<input type="password" name="password" id="password" maxlength="32" placeholder="请输入6-32位登录密码">
-				<i class="account-error">请输入登录密码</i><!-- 请输入6-32位字符，需字母数字符号两种以上组合 -->
+				<i class="account-error"></i><!-- 请输入6-32位字符，需字母数字符号两种以上组合 -->
 			</li>
 			<li>
 				<input type="password" name="repeatPassword" id="repeatPassword" maxlength="32" placeholder="请再次输入登录密码">
-				<i class="account-error">请再次输入登录密码</i>
+				<i class="account-error"></i>
 			</li>
 			<li class="regist-agree">
 				<span><b class="regist-yes"></b>我已阅读并同意</span>
 				<a href="javascript:void(0);" target="_blank">《必要服务协议》</a>
 			</li>
-			<li class="account-prompt">请同意必要服务协议</li>
+			<li class="account-prompt"></li><!-- 该手机号已注册过必要，请前往 登录 <a href="http://www.biyao.com/account/login.html?mobile=15801107849&amp;returnUrl=http%3A%2F%2Fwww.biyao.com%2Fhome%2Findex.html">登录</a>-->
 			<li class="account-btn">注册</li>
 		</ul>
 	</div>
@@ -145,3 +145,5 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript" src="../script/require.js"></script>
+<script type="text/javascript" src="../script/index-regist.js"></script>
