@@ -33,6 +33,18 @@
 					<a href="../account/regist.html" id="registBtn">注册</a>
 					<b></b>
 				</li>
+				<li class="user-center">
+					<a href="javascript:void(0);" id="UserName"><em>bnm0781</em><span></span></a>
+					<div>
+						<i></i>
+						<ul>
+							<li><a href="javascript:void(0);" target="_blank">我的订单</a></li>
+							<li><a href="javascript:void(0);" target="_blank">个人中心</a></li>
+							<li><a href="javascript:void(0);" target="_blank">退出登录</a></li>
+						</ul>
+					</div>
+					<b></b>
+				</li>
 				<li class="user-app">
 					<a href="javascript:void(0);">下载必要APP</a>
 					<div>
@@ -74,27 +86,27 @@
 	<div class="bd-bottom-ea">
 		<div class="wrap pub-logo-box clearfix">
 			<div class="pub-logo">
-				<a href="http://localhost:8888/">
+				<a href="../index.html">
 					<img src="http://static.biyao.com/pc/www/img/logo.png?v=biyao_86dbb9f">
 				</a>
 			</div>
 		</div>
 	</div>
 	<!-- wrap -->
-	<!-- <div class="wrap h580">
+	<div class="wrap h580">
 		<div class="sop-nothingbox">
 			<img src="http://static.biyao.com/pc/buy/img/shoppingcart.png?v=biyao_456d613">
 			<p class="inline">
 				<span id="loginTip" class="sop-span inline" style="display: none;">您的购物车还是空的</span>
-				<span id="unloginTip" class="sop-span inline">您的购物车还是空的，<a onclick="LT.login_uri("http://www.biyao.com/account/login.html")" class="col-link">登录</a>后，将显示您之前加入的商品。</span>
+				<span id="unloginTip" class="sop-span inline">您的购物车还是空的，<a href="../account/login.html" class="col-link">登录</a>后，将显示您之前加入的商品。</span>
 				<br>
 			</p>
 		</div>
 		<div class="toindex" align="center">
-			<a href="http://localhost:8888/">马上购物</a>
+			<a href="../index.html">马上购物</a>
 		</div>
-	</div> -->
-	<div class="wrap relative">
+	</div>
+	<div class="wrap relative" style="display: none;">
 		<div class="shopStepBox">
 			<div class="publicStepsbox">
 				<div class="car-step-icon car-step1"></div>
@@ -107,7 +119,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="pd-b40">
+	<div class="pd-b40" style="display: none;">
 		<div class="wrap ie78">
 			<div class="lineH24 t-l pd-t30 pd-b10 bd-b-d5c">
 				<span class="f18 col-666 mg-l10 col-523">购物车</span>
@@ -128,59 +140,6 @@
 							<th width="20%" align="center" class="col-523 none">包装</th>
 							<th width="10%" align="center" class="col-523">小计</th>
 							<th width="5%" align="center" class="col-523">操作</th>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="shoppingBox">
-				<div class="order-title divdel" name="divTitle-130114" supplierid="130114">
-					<label class="inline col-666 checkbox checked" name="chk-Supplier" data-value="130114">
-						<i class="openIcon inline mg-r10"></i>
-					</label>
-					<a>
-						<span class="inline">商家：</span>
-						<span id="J-product-name" class="inline col-666">WARMSINCERE皮装</span>
-					</a>
-				</div>
-				<table class="sop-table1 lastTh tabledel bg-fff" cellpadding="0" cellspacing="0">
-					<tbody>
-						<tr>
-							<td width="30px" align="left" class="pd-l10">
-								<label class="checkbox chk-Calc checked" name="chk-130114" supplierid="130114" data-value="2512126" data-design="1301145085060100001" data-num="2">
-									<i class="openIcon inline"></i>
-								</label>
-							</td>
-							<td width="130" align="left">
-								<span class="sop-img inline">
-									<a href="javascript:void(0);" target="_blank">
-										<img src="http://bfs.biyao.com/group1/M00/27/6A/rBACVFpUhNOAPZKWAADSAYO18xA172_400x400.jpg" width="100" height="100">
-									</a>
-								</span>
-							</td>
-							<td align="left">
-								<a href="javascript:void(0);">
-									<span class="col-523">进口羊皮两面穿羽绒服HC210</span>
-								</a>
-								<br>
-								<div class="col-999 mg-t5 w300 escp" style="line-height: 20px;">颜色:黑色<br>尺寸:165/88A</div>
-							</td>
-							<td width="10%" align="center" class="ff6600">¥1789</td>
-							<td width="10%" align="center" class="sizeZero">
-								<i class="sign minus inline"></i>
-								<input type="text" name="quantity" maxlength="3" value="2" shopcarid="2512126" discount="0.0" price="1789.0" num="1" packageprice="0.0" modelid="0" supplierid="130114" designid="1301145085060100001" sizename="颜色:黑色|尺寸:165/88A" class="inpCom w40 inline t-c">
-								<i class="sign plus inline"></i>
-								<p class="col-b76 mg-t5"></p>
-							</td>
-							<td width="20%" align="center" class="col-666 none">
-								<span class="span-package-type">普通包装</span>
-								<span class="span-package-price pack-selects">(免费)</span>
-							</td>
-							<td width="10%" align="center">
-								<strong class="ff6600">¥1789</strong>
-							</td>
-							<td width="5%" align="center">
-								<a href="javascript:void(0);" class="link-09c a-delete" id="deleteLink" data="2512126"></a>
-							</td>
 						</tr>
 					</tbody>
 				</table>
@@ -306,3 +265,5 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript" src="../script/require.js"></script>
+<script type="text/javascript" src="../script/index-shopcars.js"></script>

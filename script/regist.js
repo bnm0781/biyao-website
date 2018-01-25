@@ -21,7 +21,9 @@ define(["jquery"],function($){
 			this.$phoneCode.focus($.proxy(this.deleteClass));
 			this.$phoneCode.blur($.proxy(this.registPC,this));
 			this.$regsitCode = this.$phoneCode.siblings("span");// 获取验证码按钮;
-			this.$regsitCode.on("click",$.proxy(this.getVerifyingCode,this));
+			this.$imgCode = $(".account-imgCode");// 图片验证;
+			this.$regsitCode.on("click",$.proxy(this.imgCode,this));
+			// this.$regsitCode.on("click",$.proxy(this.getVerifyingCode,this));
 			this.$password = $("#password");// 登录密码输入框;
 			/* 登录密码输入框 获焦失焦事件 */
 			this.$password.focus($.proxy(this.delClass));
@@ -79,8 +81,45 @@ define(["jquery"],function($){
 				this.flag2 = false;
 			}
 		}
+		/* 图片验证 */
+		imgCode(){
+			this.$imgCode.css({
+				display:"block"
+			});
+			this.$imgCode.find("img").attr("src","http://www.zhiwo.com/verifycode?");
+			this.$imgCode.find("span").on("click",function(){
+				$(this).siblings("img").attr("src","http://www.zhiwo.com/verifycode?" + new Date().getTime())
+			})
+			this.$imgCode.find("input").focus(function(){
+				$(this).removeClass("input-error")
+				.siblings("i").css({
+					display:"none"
+				});
+			});
+			var _this = this;
+			this.$imgCode.find("input").blur(function(){
+				var value = this.value;
+				var reg = /^[0-9a-zA-Z]{4}$/;
+				if(reg.test(value)){
+					_this.$regsitCode.on("click",$.proxy(_this.getVerifyingCode,_this));
+				}else if(value = ""){
+					$(this).addClass("input-error")
+					.siblings("i").css({
+						display:"block"
+					}).html("图片验证码格式错误");
+				}else{
+					$(this).addClass("input-error")
+					.siblings("i").css({
+						display:"block"
+					}).html("请先输入图片验证码");
+				}
+			});
+		}
 		/* 获取验证码 */
 		getVerifyingCode(){
+			this.$imgCode.css({
+				display:"none"
+			});
 			var count = 30;
 			var timer = null;
 			var _this = this;

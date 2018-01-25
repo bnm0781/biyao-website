@@ -13,13 +13,25 @@ require(["script/config.js"],function(){
 		}
 		/* 退出登录 */
 		$(".user-center li").eq(2).on("click",function(){
-			$.cookie("user",null,{expires:-1});
-			$(".user-center").css({
-				display:"none"
-			});
-			$(".user-out").css({
-				display:"block"
-			})
+			$.cookie("user",null,{expires:-1,path:'/'});
+			if(!$.cookie("user")){
+				$(".user-center").css({
+					display:"none"
+				});
+				$(".user-out").css({
+					display:"block"
+				});
+			}
+			window.location.reload();
 		})
+		/* 是否显示购物车 */
+		if($.cookie("goods")){
+			var sum = 0;
+			$(JSON.parse($.cookie("goods"))).each(function(index,item){
+				sum += Number(item.num);
+				return sum;
+			})
+			$("#shopCar").html(sum);
+		}
 	})
 })

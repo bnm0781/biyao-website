@@ -2,9 +2,7 @@
 requirejs.config({
 	paths:{
 		"jquery":"../script/jquery-3.2.1",
-		"products":"../script/products",
-		"rightBar":"../script/rightBar",
 		"cookie":"../script/jquery.cookie",
-		"product0":"../script/1301065092010100001"
+		"shopcars":"../script/shopcars"
 	}
 })
