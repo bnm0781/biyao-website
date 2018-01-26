@@ -93,7 +93,7 @@ define(["jquery"],function($){
 			this.$categoryRecommend3.eq(1).find("span").html(res.data.modules[1].moduleInfo.manufacturers+"&nbsp;&nbsp;"+res.data.modules[1].moduleInfo.moduleBrand);
 			this.$categoryRecommend3.eq(1).find("img").eq(0).attr("src",res.data.modules[1].moduleInfo.moduleImage);
 			res.data.modules[1].moduleInfo.moduleItems.forEach(function(item,index){
-				_this.$categoryRecommend3.eq(1).find(".a a").eq(index).attr("href",'/products/'+item.ext.suId+'.html');
+				_this.$categoryRecommend3.eq(1).find(".a a").eq(index).attr("href",'products/'+item.ext.suId+'.html');
 				_this.$categoryRecommend3.eq(1).find(".a img").eq(index).attr("src",item.image);
 				_this.$categoryRecommend3.eq(1).find(".a dt").eq(index).html(item.ext.itemName);
 				_this.$categoryRecommend3.eq(1).find(".a dd").eq(index).html("￥"+item.ext.itemPrice);
