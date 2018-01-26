@@ -9,8 +9,6 @@ requirejs.config({
 		"keyWord":"script/keyWord",
 		"article":"script/article",
 		"login":"script/login",
-		"cookie":"script/jquery.cookie",
-		"ajax":"script/ajax",
-		"ajaxdemo":"script/ajaxdemo"
+		"cookie":"script/jquery.cookie"
 	}
 })

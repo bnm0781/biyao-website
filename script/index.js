@@ -1,6 +1,6 @@
 /* 主页业务逻辑 */
 require(["script/config.js"],function(){
-	require(["jquery","nav","rightBar","banner","category","keyWord","article","login","cookie","ajax","ajaxdemo"],function($,nav,rightBar,banner,category,keyWord,article,login,cookie,ajax,ajaxdemo){
+	require(["jquery","nav","rightBar","banner","category","keyWord","article","login","cookie"],function($,nav,rightBar,banner,category,keyWord,article,login,cookie){
 		/* 主页显示用户名 */
 		if($.cookie("user")){
 			$(".user-center").css({

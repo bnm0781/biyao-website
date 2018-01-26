@@ -13,6 +13,7 @@ define(["jquery"],function($){
 			$(".minus").click($.proxy(this.minus));
 			$(".plus").click($.proxy(this.plus));
 			$(".a-delete").click($.proxy(this.deleteLink));
+			$("#a-BatchDel").click($.proxy(this.aBatchDel));
 		}
 		/* 初始显示加载 */
 		loading(){
@@ -215,9 +216,7 @@ define(["jquery"],function($){
 			var Num = Number($(this).siblings('input').attr("value"));
 			var unitPrice = Number($(this).parent().siblings(".unitPrice").find("em").html());
 			var subtotal = Number($(this).parent().siblings(".subtotal").find("em").html());
-			if(Num > 1){
-				++Num;
-			}
+			++Num;
 			subtotal = Num * unitPrice;
 			$(this).siblings('input').attr("value",Num);
 			$(this).parent().siblings(".subtotal").find("em").html(subtotal);
@@ -251,6 +250,11 @@ define(["jquery"],function($){
 			});
 			$("#totalPrice").html("¥"+totalPrice);
 			$(".priceDisplay").html("¥ "+totalPrice);
+		}
+		/* 删除所有商品 */
+		aBatchDel(){
+			$.cookie("goods",null,{expires:-1,path:'/'});
+			window.location.reload();
 		}
 		/* 删除商品 */
 		// deleteLink(){
